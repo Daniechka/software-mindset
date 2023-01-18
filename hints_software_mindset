@@ -1,0 +1,23 @@
+in the dir ~/Work/SoftwareMindset/ set up VScode project
+via pyenv manage working envs
+
+Pyenv setup for system.
+ 1709  pyenv --version
+ 1711  pyenv global  # display main python on system
+ 1712  python --version  # it is the same here
+ 1714  pyenv install --list  # list available python versions
+# if pyenv version is too old, pull the newest, to gain access to newer pythons
+ 1715  cd ~/.pyenv/
+ 1716  git pull
+ 1717  pyenv --version  # newer pyenv
+ 1718  pyenv install --list  # more pythons
+ 1719  cd ~/Work/SoftwareMindset/
+ 1720  pyenv install 3.10.5
+ 1721  pyenv versions  # show what is available in system
+# create venv for the project software mindset
+ 1727  pyenv virtualenv 3.10.5 venv310
+ 1728  pyenv local venv310
+ 1729  which python
+ 1730  python --version
+# to Select Interpreter in VSCode reload window, home+F1-> Select Int..-> ~/.pyenv/versions/3.10.5/envs/venv310/bin/python
+
